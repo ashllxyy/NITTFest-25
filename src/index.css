@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/bg2.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  font-family: "Jost", sans-serif;
+  
+  height: 100vh;
+  padding: 10px;
+}
+.app{
+  display: flex;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.nav-items{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+
+}
+.footer{
+  color: white;
+  text-align: center;
+  align-content: baseline;
+}
+.gradient-text {
+  font-size: x-large;
+  background: linear-gradient(180deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.nav-items a{
+  text-decoration: none;
+}
+
+.content{
+  margin-top: 50px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 2s ease-in;
+}
+.type-text {
+  font-size: xx-large;
+  
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: normal;
+  animation: textAnimation 2s ease-in-out ;
+}
+
+.container{
+  text-align: center;
+  max-width: 500px;
+  margin: 20px;
+  padding: 20px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-evenly;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  color: white; 
+}
+.container h3{
+  font-weight: 500;
+}
+
+.quiz-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-evenly;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  color: white; 
+}
+.idcard-container {
+  text-align: center;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-evenly;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  color: white; 
+}
+.quiz-content h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.quiz-content h2{
+  font-weight: 300;
+}
+.quiz-start-btn button{
+  padding: 8px 10px;
+  background: linear-gradient(90deg, red, orange);
+ color: white;
+ width: 50%;
+  border-radius: 6px;
+ 
+  border: none;
+}
+
+/* Hide the default file input */
+#fileInput {
+  display: none;
+}
+
+/* Style the custom button */
+.custom-file-upload {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Style for hover effect */
+
+
+
+.register-field form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.register-field form input{
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 12px;
+  background-color: transparent;
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+.buttons{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+}
+.buttons button{
+  padding: 10px;
+  width: 50%;
+  background: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: medium;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.id-download{
+  padding: 10px 20px;
+  background: none;
+  width: 50%;
+  border-radius: 6px;
+  outline: none;
+  font-size: medium;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.idcard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button:hover{
+  background-color: white;
+  color: black;
+  animation: fadeIn 1s ease-in;
+}
+.an-link{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Slightly smaller */
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1); /* Normal size */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Slightly larger */
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
