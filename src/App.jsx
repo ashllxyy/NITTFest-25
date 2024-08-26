@@ -6,6 +6,7 @@ import Login from './login';
 import Results from './results';
 import Quiz from './quiz';
 import { auth } from './assets/firebase/firebasecongfig';
+import {Toaster} from 'react-hot-toast';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div>
+      <Toaster />
       <Router>
         <Routes>
 
